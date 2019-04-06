@@ -14,7 +14,7 @@ public class HelloWorld {
 
         Observable<Integer> observable = Observable.fromArray(1, 2, 3, 4, 5, 6, 7);
 
-        Observer<Integer> observer = new Observer<Integer>() {
+        Observer<Integer> observer = new Observer<>() {
             @Override
             public void onSubscribe(Disposable d) {
                 System.out.println("绑定订阅");
